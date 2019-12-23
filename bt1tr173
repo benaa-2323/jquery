@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>b1tr173</title>
+	<style type="text/css">
+		div{
+			background-color: red;
+			width: 1000px;
+			height: 2000px;
+			font-size: 70px;
+		}
+	</style>
+</head>
+<body>
+	<div id="target">M24</div>
+	<script src="dxfg/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#target').click(function(){
+				$('#target').css('background-color','green');
+				$('#target').css('width','600px');
+				$('#target').css('height','400px');
+				$('#target').css('font-size','90px');
+			});
+		});
+	</script>
+</body>
+</html>
