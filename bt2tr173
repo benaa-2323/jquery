@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1" cellpadding="5" cellspacing="0" align="center">
+		<tr>
+			<td>STT</td>
+			<td>Tên Sách</td>
+			<td>Đơn giá</td>
+			<td>Số lượng</td>
+			<td>Thành tiền</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Giáo trình HTML và CSS</td>
+			<td id="gia1">50000</td>
+			<td id="soluong1">2</td>
+			<td id="thanhtien1"></td>
+		</tr>	
+		<tr>
+			<td>2</td>
+			<td>Thủ thuật trong Javascrip</td>
+			<td id="gia2">45000</td>
+			<td id="soluong2">3</td>
+			<td id="thanhtien2"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Jquery toàn tập</td>
+			<td id="gia3">100000</td>
+			<td id="soluong3">5</td>
+			<td id="thanhtien3"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>PHP và MySQL</td>
+			<td id="gia4">150000</td>
+			<td id="soluong4">2</td>
+			<td id="thanhtien4"></td>
+		</tr>
+	</table>
+	<script src="dxfg/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#thanhtien1').click(function(){
+				var gia1 =document.getElementById('gia1').innerHTML;
+				var soluong1 =document.getElementById('soluong1').innerHTML;
+				gia1 = parseInt(gia1);
+				soluong1 =parseInt(soluong1);
+				var thanhtien1 =gia1*soluong1;
+				document.getElementById('thanhtien1').innerHTML= thanhtien1;
+
+			});
+			$('#thanhtien2').click(function(){
+				var gia2 =document.getElementById('gia2').innerHTML;
+				var soluong2 =document.getElementById('soluong2').innerHTML;
+				gia2 = parseInt(gia2);
+				soluong2 =parseInt(soluong2);
+				var thanhtien2 =gia2*soluong2;
+				document.getElementById('thanhtien2').innerHTML= thanhtien2;
+
+			});
+			$('#thanhtien3').click(function(){
+				var gia3 =document.getElementById('gia3').innerHTML;
+				var soluong3 =document.getElementById('soluong3').innerHTML;
+				gia3 = parseInt(gia3);
+				soluong3 =parseInt(soluong3);
+				var thanhtien3 =gia3*soluong3;
+				document.getElementById('thanhtien3').innerHTML= thanhtien3;
+
+			});
+			$('#thanhtien4').click(function(){
+				var gia4 =document.getElementById('gia4').innerHTML;
+				var soluong4 =document.getElementById('soluong4').innerHTML;
+				gia4 = parseInt(gia4);
+				soluong4 =parseInt(soluong4);
+				var thanhtien4 =gia4*soluong4;
+				document.getElementById('thanhtien4').innerHTML= thanhtien4;
+
+			});
+		});
+	</script>
+</body>
+</html>
